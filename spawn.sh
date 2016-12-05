@@ -13,7 +13,7 @@ if [ $# -lt 1 ]; then
 	exit
 fi
 
-TERMINAL="evilvte"
+TERMINAL=${TERMINAL:-st}
 
 if [ $# -lt 2 ]; then
 	$TERMINAL -e "$1" &
