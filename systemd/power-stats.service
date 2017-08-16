@@ -1,0 +1,6 @@
+[Unit]
+Description=Logs CSV power stats
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh -c '/home/amar/proj/code/misc/power-stats.sh >> /home/amar/log/stats/power.csv'
